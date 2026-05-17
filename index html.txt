@@ -1,0 +1,69 @@
+export default function CVPortfolio() { return ( <div className="min-h-screen bg-gray-100 text-gray-900 p-6"> <div className="max-w-4xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden"> {/* Header */} <div className="bg-black text-white p-10 text-center"> <h1 className="text-5xl font-bold mb-2">Maryam BK</h1> <p className="text-lg opacity-80">Étudiante en Informatique & Santé</p> </div>
+
+{/* About */}
+    <section className="p-8 border-b">
+      <h2 className="text-3xl font-semibold mb-4">À propos</h2>
+      <p className="text-gray-700 leading-7">
+        Je suis une étudiante passionnée par la technologie, le développement web
+        et les systèmes d'information de santé. J'aime créer des projets modernes,
+        simples et utiles pour les étudiants et les professionnels.
+      </p>
+    </section>
+
+    {/* Skills */}
+    <section className="p-8 border-b">
+      <h2 className="text-3xl font-semibold mb-4">Compétences</h2>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {[
+          'HTML',
+          'CSS',
+          'JavaScript',
+          'React',
+          'GitHub',
+          'UI/UX',
+          'PowerPoint',
+          'Markdown'
+        ].map((skill) => (
+          <div
+            key={skill}
+            className="bg-gray-200 rounded-2xl p-4 text-center font-medium hover:bg-black hover:text-white transition"
+          >
+            {skill}
+          </div>
+        ))}
+      </div>
+    </section>
+
+    {/* Projects */}
+    <section className="p-8 border-b">
+      <h2 className="text-3xl font-semibold mb-6">Projets</h2>
+
+      <div className="space-y-6">
+        <div className="bg-gray-100 p-6 rounded-2xl shadow">
+          <h3 className="text-2xl font-bold">StudentLife App</h3>
+          <p className="mt-2 text-gray-700">
+            Application destinée aux étudiants pour gérer les cours,
+            le stress, les tâches et la communication universitaire.
+          </p>
+        </div>
+
+        <div className="bg-gray-100 p-6 rounded-2xl shadow">
+          <h3 className="text-2xl font-bold">Prescription Électronique</h3>
+          <p className="mt-2 text-gray-700">
+            Projet sur la digitalisation des prescriptions médicales
+            afin d'améliorer la sécurité et l'organisation hospitalière.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {/* Contact */}
+    <section className="p-8 text-center">
+      <h2 className="text-3xl font-semibold mb-4">Contact</h2>
+      <p>Email : maryam@example.com</p>
+      <p>GitHub : github.com/maryam</p>
+    </section>
+  </div>
+</div>
+
+) }
